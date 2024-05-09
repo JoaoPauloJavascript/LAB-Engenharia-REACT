@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Mas from "./Img/male.png"; // Mantém o nome original do arquivo para a imagem masculina
-import Fem from "./Img/female.png"; // Mantém o nome original do arquivo para a imagem feminina
+import Mas from "./Img/male.png"; 
+import Fem from "./Img/female.png"; 
 
 function ContadorGenero() {
   const [contagemMasculino, setContagemMasculino] = useState(0);
   const [contagemFeminino, setContagemFeminino] = useState(0);
 
-  // Funções para adicionar ou remover contagem de masculino
+  
   const adicionarMasculino = () => {
     setContagemMasculino(contagemMasculino + 1);
   };
@@ -17,7 +17,7 @@ function ContadorGenero() {
     }
   };
 
-  // Funções para adicionar ou remover contagem de feminino
+  
   const adicionarFeminino = () => {
     setContagemFeminino(contagemFeminino + 1);
   };
@@ -28,7 +28,7 @@ function ContadorGenero() {
     }
   };
 
-  // Calcula o total de pessoas contadas
+  
   const totalContado = contagemMasculino + contagemFeminino;
 
   return (
