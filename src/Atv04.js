@@ -12,6 +12,7 @@ import MoveC from './MoveC';
 import CounterList from './CounterList';
 import List4 from './List4';
 import BucketList from './BucketList';
+import Movingdot from './Movingdot';
 
 
 export default function Atv04() {
@@ -28,6 +29,7 @@ export default function Atv04() {
         <MoveC/>
         <CounterList/>
         <BucketList/>
+        <Movingdot/>
         
         <List3/>
         <List4/>

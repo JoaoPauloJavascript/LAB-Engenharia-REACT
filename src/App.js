@@ -1,16 +1,23 @@
-import React from "react";
-import Minhasrotas from "./Minhasrotas";
-import Gallery from "./Gallery.js";
-import React05 from "./React05.js";
+import Avatar from './Avatar.js';
 
-function App() {
+function Card({ children }) {
   return (
-    <>
-      <Minhasrotas />
-      <Gallery />
-      <React05 />
-    </>
+    <div className="card">
+      {children}
+    </div>
   );
 }
 
-export default App;
+export default function Perfil() {
+  return (
+    <Card>
+      <Avatar
+        size={100}
+        person={{ 
+          name: 'Katsuko Saruhashi',
+          imageId: 'YfeOqp2'
+        }}
+      />
+    </Card>
+  );
+}
